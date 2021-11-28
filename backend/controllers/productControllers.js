@@ -1,7 +1,5 @@
 const Product = require('../models/productModel');
 
-
-
 // creating Product -- Admin
 exports.createProduct = async (req, res, next) => {
     const product = await Product.create(req.body)
